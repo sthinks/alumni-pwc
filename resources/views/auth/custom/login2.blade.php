@@ -38,7 +38,7 @@
                             <!--end::Label-->
                             <!--begin::Input-->
                             <input style="border:2px solid #e2e2e2;" placeholder="E-mail" value="{{ old('email') }}"
-                                class="form-control form-control-lg alumni-form-control @error('email') is-invalid @enderror bg-transparent" type="text"
+                                class="form-control form-control-lg @error('email') is-invalid @enderror bg-transparent" type="text"
                                 name="email" autocomplete="off" required />
                             @error('email')
                                 <span class="invalid-feedback" role="alert">
@@ -53,7 +53,7 @@
                             <!--begin::Input-->
                             <div class="input-group">
                                 <input style="border:2px solid #e2e2e2;" placeholder="Şifre" id="password" type="password"
-                                    class="form-control @error('password') is-invalid @enderror alumni-form-control bg-transparent"
+                                    class="form-control @error('password') is-invalid @enderror bg-transparent"
                                     aria-describedby="password-addon" aria-label="şifre" name="password" required
                                     autocomplete="new-password">
                             </div>
