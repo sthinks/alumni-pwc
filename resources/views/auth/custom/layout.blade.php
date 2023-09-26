@@ -47,10 +47,10 @@
             <div class="row">
                 <div class="col-12">
                     <div class="d-flex align-items-center; align-items:center">
-                        <div style="flex:7">
-                            <p class="text-white" style="margin:0px">© 2015-2023 PwC. All rights reserved. PwC refers to the PwC network and/or one or more of its member firms, each of which is a separate legal entity. Please see www.pwc.com/structure for further details.</p>
+                        <div style="flex:8; display:flex; align-items:center;">
+                            <p class="text-white" style="margin:0px; font-size:14px">© 2015-2023 PwC. All rights reserved. PwC refers to the PwC network and/or one or more of its member firms, each of which is a separate legal entity. Please see www.pwc.com/structure for further details.</p>
                         </div>
-                        <div style="flex:3; display:flex; justify-content:end; align-items:center; gap: 30px;">
+                        <div style="flex:2; display:flex; justify-content:end; align-items:center; gap: 30px;">
                             <img src="/images/pwc-beyaz-logo.png" alt="" srcset="" style="width:62px;height:48px">
                             <img src="/images/strategy-beyaz-logo.png" alt="" srcset="" style="width:92px;height:28px">
                             <img src="/images/gsg-beyaz-logo.png" alt="" srcset="" style="width:95px;height:13px">

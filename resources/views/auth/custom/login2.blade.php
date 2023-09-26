@@ -13,12 +13,12 @@
                     <form method="POST" action="{{ route('login') }}" id="sign_in_form">
                         @csrf
                         <!--begin::Heading-->
-                        <div class="mb-10">
+                        <div class="mb-8">
                             <!--begin::Title-->
                             <img src="/images/strategy-siyah-logo.png" alt="" srcset="">
                             <!--begin::Link-->
-                            <div style="color:#d93954; font-size:24px; font-weight:700; margin-top:25px">Alumni Portal'a hoş geldiniz.</div>
-                            <div style="font-size:20px; font-weight:bold">Kullanıcı Girişi</div>
+                            <div class="custom-bold" style="color:#d93954; font-size:20px; font-weight:700; margin-top:25px">Alumni Portal'a hoş geldiniz.</div>
+                            <div class="custom-html" style="font-size:16px; font-weight:bold; margin-top: 6px;">Kullanıcı Girişi</div>
                             @if (session()->has('status'))
                                 <span class="valid-feedback" role="alert" style="display: block;">
                                     <strong>{{ session()->get('status') }}</strong>
@@ -33,7 +33,7 @@
                         </div>
                         <!--begin::Heading-->
                         <!--begin::Input group-->
-                        <div class="fv-row mb-10">
+                        <div class="fv-row mb-6">
                             <!--begin::Label-->
                             <!--end::Label-->
                             <!--begin::Input-->
@@ -67,13 +67,13 @@
                                 <div class="form-check d-flex align-items-center justify-content-between alumni_agreement">
                                         <input style="width: 20px; height: 20px; border-radius:5px; border:2px solid #e2e2e2;" class="form-check-input" type="checkbox" name="remember" id="remember"
                                             {{ old('remember') ? 'checked' : '' }}>
-                                        <label class="form-check-label" for="check-login" style="margin-left:8px;font-size:15px;padding-top:5px">
+                                        <label class="form-check-label custom-html" for="check-login" style="margin-left:8px;font-size:14px;">
                                             Beni Hatırla
                                         </label>
                                 </div>
                                     <!--begin::Link-->
                                     <a href="{{ route('password.request') }}"
-                                        class="link-primary fs-6 fw-bolder bgi-no-repeat" style="color:#000">
+                                    class="link-primary bgi-no-repeat custom-html" style="color:#000; font-size:14px">
                                         Şifremi Unuttum
                                     </a>
                                     <!--end::Link-->
@@ -84,13 +84,13 @@
                         <div class="text-center">
                             <!--begin::Submit button-->
                             <button type="submit" class="btn btn-lg btn-primary w-100 text-dark mb-5"
-                                style="background-color: #D93954;font-weight: 700; padding-bottom: 8px;">
-                                <span class="text-white" style="font-size:20px">Giriş Yap</span>
+                                style="background-color: #D93954;padding-bottom: 8px;">
+                                <span class="text-white custom-html" style="font-size:17px">Giriş Yap</span>
                             </button>
                             <a href="{{ route('register') }}"
-                                class="btn btn-lg btn-primary w-100 mb-5 font-weight-bold"
-                                style="font-weight: 700; border: 1px solid white; padding-bottom: 8px; background:#e2e2e2;">
-                                <span style="color:#000; font-size:20px">Kayıt Ol</span>
+                                class="btn btn-lg btn-primary w-100 mb-5"
+                                style=" border: 1px solid white; padding-bottom: 8px; background:#e2e2e2;">
+                                <span class="custom-html" style="color:#000; font-size:17px">Kayıt Ol</span>
                             </a>
                             <!--end::Submit button-->
                         </div>

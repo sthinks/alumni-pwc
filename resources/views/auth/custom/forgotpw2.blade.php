@@ -15,10 +15,8 @@
                         <div class="mb-10">
                             <img src="/images/strategy-siyah-logo.png" alt="" srcset="">
                             <!--begin::Title-->
-                            <div style="color:#d93954; font-size:24px; font-weight:700; margin-top:25px">Şifremi Unuttum</div>
-                            <!--end::Title-->
-                            <!--begin::Link-->
-                            <div style="font-size:20px; font-weight:bold">Lütfen, e-mail adresinizi giriniz.</div>
+                            <div class="custom-bold" style="color:#d93954; font-size:20px; font-weight:700; margin-top:25px">Şifremi Unuttum</div>
+                            <div class="custom-bold" style="font-size:16px; font-weight:bold; margin-top: 15px;">Lütfen, e-mail adresinizi giriniz.</div>
                             <!--end::Link-->
                         </div>
                         <!--begin::Heading-->
@@ -45,8 +43,8 @@
                         <!--begin::Actions-->
                         <div class="text-center d-flex">
                             <!--begin::Submit button-->
-                            <button type="submit" class="btn btn-lg btn-primary w-100 mb-5" style="margin-right: 1rem; background-color:#D93954; font-weight: 700; padding-bottom: 8px;">
-                                <span style="font-size: 20px;">Şifremi sıfırla</span>
+                            <button type="submit" class="btn btn-lg btn-primary w-100 mb-5" style="background-color:#D93954;padding-bottom: 8px;">
+                                <span class="custom-html" style="font-size: 17px;">Şifremi sıfırla</span>
                             </button>
                             <!--end::Submit button-->
                         </div>

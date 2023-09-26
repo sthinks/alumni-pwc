@@ -15,7 +15,7 @@
                         <div class="mb-10" style="position: relative; bottom:20px;">
                             <img src="/images/strategy-siyah-logo.png" alt="" srcset="">
                             <!--begin::Title-->
-                            <h4 class="mt-8" style="font-weight: 700; color:#d93954;">Kayıt Ol</h4>
+                            <h4 class="mt-8 custom-bold" style="color:#d93954; font-size:18px">Kayıt Ol</h4>
                             <!--end::Title-->
                             <!--begin::Link-->
                             <h4 class="mt-8" style="font-weight: 700; color:#d93954;">Lütfen kayıt olmak için aşağıdaki bilgileri doldurunuz.</h4>
@@ -25,7 +25,7 @@
                         <!--begin::Input group-->
                         <div class="fv-row mb-10">
                             <!--begin::Label-->
-                            <label style="font-size:20px; font-weight:bold" class="form-label required">Adınız Soyadınız</label>
+                            <label style="font-size:16px; font-weight:bold" class="form-label required">Adınız Soyadınız</label>
                             <!--end::Label-->
                             <!--begin::Input-->
                             <input style="border:2px solid #e2e2e2;" id="name" type="text" class="form-control @error('name') is-invalid @enderror"
@@ -41,7 +41,7 @@
                         <!--begin::Input group-->
                         <div class="fv-row mb-10">
                             <!--begin::Label-->
-                            <label style="font-size:20px; font-weight:bold" class="form-label required">E-mail adresiniz</label>
+                            <label style="font-size:16px; font-weight:bold" class="form-label required">E-mail adresiniz</label>
                             <!--end::Label-->
                             <!--begin::Input-->
                             <input style="border:2px solid #e2e2e2;" id="email" type="email" class="form-control @error('email') is-invalid @enderror"
@@ -60,7 +60,7 @@
                         <div class="fv-row mb-10">
                             <!--begin::Label-->
                             <div class="d-flex">
-                                <label style="font-size:20px; font-weight:bold" class="form-label required">Şifre</label>
+                                <label style="font-size:16px; font-weight:bold" class="form-label required">Şifre</label>
                                 <div class="position-relative table_info"
                                      data="Şifreniz en az 1 büyük, 1 küçük, 1 rakam ve 1
                                 özel karakter içermelidir. Şifrenizin uzunluğu en az 10 karakter
@@ -95,7 +95,7 @@
                         <!--begin::Input group-->
                         <div class="fv-row mb-10">
                             <!--begin::Label-->
-                            <label style="font-size:20px; font-weight:bold;" class="form-label required">Şifre tekrar</label>
+                            <label style="font-size:16px; font-weight:bold;" class="form-label required">Şifre tekrar</label>
                             <!--end::Label-->
                             <!--begin::Input-->
                             <div class="input-group">
@@ -115,7 +115,7 @@
                         <!--begin::Input group-->
                         <div class="fv-row mb-10">
                             <!--begin::Label-->
-                            <label style="font-size:20px; font-weight:bold" class="form-label required">Cep telefonu numaranız (Onay kodu gönderilecektir)</label>
+                            <label style="font-size:16px; font-weight:bold" class="form-label required">Cep telefonu numaranız (Onay kodu gönderilecektir)</label>
                             <!--end::Label-->
                             <!--begin::Input-->
                             <input style="border:2px solid #e2e2e2;" id="phone" type="text" class="form-control @error('phone') is-invalid @enderror"
@@ -135,7 +135,7 @@
                             <!--begin::Input group-->
                             <div class="col-6 mb-10">
                                 <!--begin::Label-->
-                                <label style="font-size:20px; font-weight:bold" class="form-label required">Doğum tarihiniz</label>
+                                <label style="font-size:16px; font-weight:bold" class="form-label required">Doğum tarihiniz</label>
                                 <!--end::Label-->
                                 <!--begin::Input-->
                                 <input style="border:2px solid #e2e2e2;" id="birthdate" type="text"
@@ -153,7 +153,7 @@
                             <!--begin::Input group-->
                             <div class="col-6 mb-10">
                                 <!--begin::Label-->
-                                <label style="font-size:20px; font-weight:bold" class="form-label required">PwC'ye ilk katılma yılınız</label>
+                                <label style="font-size:16px; font-weight:bold" class="form-label required">PwC'ye ilk katılma yılınız</label>
                                 <!--end::Label-->
                                 <!--begin::Input-->
                                 <input style="border:2px solid #e2e2e2;" id="pwc_join_year" class="form-control @error('pwc_join_year') is-invalid @enderror"
@@ -172,7 +172,7 @@
                         <!--begin::Input group-->
                         <div class="fv-row mb-10">
                             <!--begin::Label-->
-                            <label style="font-size:20px; font-weight:bold" class="form-label">LinkedIn hesabınız</label>
+                            <label style="font-size:16px; font-weight:bold" class="form-label">LinkedIn hesabınız</label>
                             <!--end::Label-->
                             <!--begin::Input-->
                             <input style="border:2px solid #e2e2e2;" id="linkedin" placeholder="http://www.linkedin.com/" type="url" class="form-control @error('linkedin') is-invalid @enderror"
@@ -190,7 +190,7 @@
                         <!--begin::Input group-->
                         <div class="fv-row mb-10 alumni_agreement">
                             <div class="form-check mt-5">
-                                <input name="user_agreement" required class="form-check-input" type="checkbox" value="1" id="check-login">
+                                <input style="width: 20px; height: 20px; border-radius:5px; border:2px solid #e2e2e2;"  name="user_agreement" required class="form-check-input" type="checkbox" value="1" id="check-login">
                                 <label class="form-check-label " for="check-login">
                                     * <a href="{{ route('legal.aydinlatma') }}" class="register_legal "
                                         data-bs-toggle="modal" data-bs-target="#aydinlatma" target="_blank">Aydınlatma
@@ -198,7 +198,7 @@
                                 </label>
                             </div>
                             <div class="form-check mt-5">
-                                <input name="clarification_text" required class="form-check-input" type="checkbox" value="1" id="check-login2">
+                                <input style="width: 20px; height: 20px; border-radius:5px; border:2px solid #e2e2e2;"  name="clarification_text" required class="form-check-input" type="checkbox" value="1" id="check-login2">
                                 <label class="form-check-label " for="check-login2">
                                     * <a href="{{ route('legal.uyeliksozlesmesi') }}" class="register_legal "
                                         data-bs-toggle="modal" data-bs-target="#uyeliksozlesmesi" target="_blank">Üyelik
@@ -206,7 +206,7 @@
                                 </label>
                             </div>
                             <div class="form-check mt-5">
-                                <input name="acik-riza-metni" class="form-check-input" type="checkbox" value=""
+                                <input style="width: 20px; height: 20px; border-radius:5px; border:2px solid #e2e2e2;"  name="acik-riza-metni" class="form-check-input" type="checkbox" value=""
                                     id="check-login3">
                                 <label class="form-check-label " for="check-login3">
                                     <a href="{{ route('legal.uyeliksozlesmesi') }}" class="register_legal "
@@ -220,8 +220,8 @@
                         <div class="text-center d-flex">
                             <!--begin::Submit button-->
                             <button type="submit" class="btn btn-lg btn-primary w-100 mb-5"
-                                style="margin-right: 1rem;background-color:#D93954;font-weight: 700; padding-bottom: 8px;">
-                                <span style="font-size:20px">Kayıt Ol</span>
+                                style="background-color:#D93954; padding-bottom: 8px;">
+                                <span class="custom-html text-white" style="color:#000; font-size:17px">Kayıt Ol</span>
                             </button>
                             <!--end::Submit button-->
                         </div>
@@ -308,17 +308,17 @@
                         </div>
                     </div>
                     <div class="card-body">
-                    <p style="color:#2d2d2d; font-size:20px" class="card-title mb-5">Herkese merhaba,</p>
-                    <p style="color:#2d2d2d; font-size:20px" class="card-title mb-5">
+                    <p style="color:#2d2d2d; font-size:18px" class="card-title mb-5">Herkese merhaba,</p>
+                    <p style="color:#2d2d2d; font-size:18px" class="card-title mb-5">
                         Çok heyecanlıyız. PwC Ailesinin tüm üyelerini bir araya getirmek amacıyla PwC Türkiye Alumni Topluluğunu yeniliklerle ve farklı buluşma platformları ile yeniden hayata geçirmekten büyük mutluluk duyuyoruz. PwC Türkiye Ailesine kattıklarınız çok kıymetli. Yeniliklerle dolu projelerimizle birlikte aramıza tekrar hoş geldiniz diyerek sizlere yeni web sitemizi tanıtmak istiyoruz.
                     </p>
-                    <p style="color:#2d2d2d; font-size:20px" class="card-title mb-5">
+                    <p style="color:#2d2d2d; font-size:18px" class="card-title mb-5">
                         PwC Türkiye Alumni web sitesi 10bin kişiye yaklaşan PwC Ailemizin ana iletişim platformumuz olacak. Bu platform aracılığı ile birbirinizle iletişim kurabilir, PwC ailesinden yeni gelişmeler ve kariyer fırsatları hakkında haberdar olabilir, sizlere özel ayrıcalıklardan faydalanabilir, benzer ilgi alanlarına sahip arkadaşlarınızla biraraya gelebileceğiniz hobi kulüplerimize üye olabilirsiniz
                     </p>
-                    <p style="color:#2d2d2d; font-size:20px" class="card-title mb-5">
+                    <p style="color:#2d2d2d; font-size:18px" class="card-title mb-5">
                         Geçtiğimiz aylarda yaptığımız toplantılarımız ve etkinliklerimiz ile sizlerle bir araya gelme, hasret giderme fırsatı yakaladık, birbirimize anlatacak ne çok şey birikmiş!
                     </p>
-                    <p style="color:#2d2d2d; font-size:20px" class="card-title mb-5">
+                    <p style="color:#2d2d2d; font-size:18px" class="card-title mb-5">
                         Önümüzdeki günlerde gerek online gerek yüz yüze düzenleyeceğimiz etkinliklerimizde görüşmek dileğiyle.
                     </p>
                     </div>
@@ -332,7 +332,7 @@
                 <span id="descButtonAlertText">0</span>
             </div>
             <img class="button-avatar" src="/images/ozlem-guc-alioglu-pp.png" alt="Özlem Güç Alioğlu">
-            <span style="margin-left:15px">Özlem Güç Alioğlu</span>
+            <span style="margin-left:15px; font-size: 15px; margin-left: 15px;" class="custom-bold">Özlem Güç Alioğlu</span>
         </div>
     </div>
 @endsection
