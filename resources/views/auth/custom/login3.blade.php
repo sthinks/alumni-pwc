@@ -4,7 +4,7 @@
     <div class="d-flex flex-column flex-root pwc-alumni_background-image">
         <!--begin::Authentication - Sign-in -->
         <div class="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed"
-            style="background-image: url(assets/media/pwc-alumni-login-2-min.gif);background-size: cover;">
+            style="background-image: url(/images/gsg-bg.jpg);background-size: cover;">
             <!--begin::Content-->
             <div class="d-flex justify-content-center flex-column flex-column-fluid p-10 pb-lg-20">
                 <!--begin::Wrapper-->
