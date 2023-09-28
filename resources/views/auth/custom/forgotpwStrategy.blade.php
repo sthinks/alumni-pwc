@@ -1,9 +1,9 @@
 @extends("auth.custom.layout")
 @section("title", "Şifremi Unuttum")
 @section("main")
-    <div class="d-flex flex-column flex-root pwc-alumni_background-image">
+    <div class="d-flex flex-column flex-root ">
         <!--begin::Authentication - Sign-in -->
-        <div class="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed" style="background-image: url(/images/gsg-bg.jpg); background-size: cover;">
+        <div class="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed" style="background-image: url(/images/strategy-bg.png); background-size: cover;">
             <!--begin::Content-->
             <div class="d-flex justify-content-center flex-column flex-column-fluid p-10 pb-lg-20">
                 <!--begin::Wrapper-->
@@ -13,7 +13,7 @@
                         @csrf
                         <!--begin::Heading-->
                         <div class="mb-10">
-                            <img src="/images/gsg-siyah-logo.png" alt="" srcset="">
+                            <img src="/images/strategy-siyah-logo.png" alt="" srcset="">
                             <!--begin::Title-->
                             <div class="custom-bold" style="color:#d93954; font-size:20px; font-weight:700; margin-top:25px">Şifremi Unuttum</div>
                             <div class="custom-bold" style="font-size:16px; font-weight:bold; margin-top: 15px;">Lütfen, e-mail adresinizi giriniz.</div>
@@ -43,7 +43,7 @@
                         <!--begin::Actions-->
                         <div class="text-center d-flex">
                             <!--begin::Submit button-->
-                            <button type="submit" class="btn btn-lg btn-primary w-100 mb-5" style="background-color:#D93954; padding-bottom: 8px;">
+                            <button type="submit" class="btn btn-lg btn-primary w-100 mb-5" style="background-color:#D93954;padding-bottom: 8px;">
                                 <span class="custom-html" style="font-size: 17px;">Şifremi sıfırla</span>
                             </button>
                             <!--end::Submit button-->

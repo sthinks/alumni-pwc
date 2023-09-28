@@ -16,8 +16,8 @@ class AuthRouteMethods
             // Login Routes...
             if ($options['login'] ?? true) {
                 $this->get('login', 'Auth\LoginController@showLoginForm')->name('login');
-                $this->get('login2', 'Auth\LoginController@showLogin2Form')->name('login2');
-                $this->get('login3', 'Auth\LoginController@showLogin3Form')->name('login3');
+                $this->get('login/strategy', 'Auth\LoginController@showLoginStrategyForm')->name('loginStrategy');
+                $this->get('login/gsghukuk', 'Auth\LoginController@showLoginGsghukukForm')->name('loginGsghukuk');
 
                 $this->post('login', 'Auth\LoginController@login');
             }
@@ -30,8 +30,8 @@ class AuthRouteMethods
             // Registration Routes...
             if ($options['register'] ?? true) {
                 $this->get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
-                $this->get('register2', 'Auth\RegisterController@showRegistration2Form')->name('register2');
-                $this->get('register3', 'Auth\RegisterController@showRegistration3Form')->name('register3');
+                $this->get('register/strategy', 'Auth\RegisterController@showRegistrationStrategyForm')->name('registerStrategy');
+                $this->get('register/gsghukuk', 'Auth\RegisterController@showRegistrationGsghukukForm')->name('registerGsghukuk');
                 $this->post('register', 'Auth\RegisterController@register');
             }
 
@@ -62,8 +62,8 @@ class AuthRouteMethods
     {
         return function () {
             $this->get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
-            $this->get('password/reset2', 'Auth\ForgotPasswordController@showLinkRequest2Form')->name('password.request2');
-            $this->get('password/reset3', 'Auth\ForgotPasswordController@showLinkRequest3Form')->name('password.request3');
+            $this->get('password/reset/strategy', 'Auth\ForgotPasswordController@showLinkRequestStrategyForm')->name('password.requestStrategy');
+            $this->get('password/reset/gsghukuk', 'Auth\ForgotPasswordController@showLinkRequestGsghukukForm')->name('password.requestGsghukuk');
 
             $this->post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
             $this->get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');

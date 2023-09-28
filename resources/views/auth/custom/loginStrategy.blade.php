@@ -1,7 +1,7 @@
 @extends("auth.custom.layout")
 @section('title', 'Giriş Yap')
 @section('main')
-    <div class="d-flex flex-column flex-root pwc-alumni_background-image">
+    <div class="d-flex flex-column flex-root ">
         <!--begin::Authentication - Sign-in -->
         <div class="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed"
             style="background-image: url(/images/strategy-bg.png); background-size: cover;">
@@ -72,7 +72,7 @@
                                         </label>
                                 </div>
                                     <!--begin::Link-->
-                                    <a href="{{ route('password.request') }}"
+                                    <a href="{{ route('password.requestStrategy') }}"
                                     class="link-primary bgi-no-repeat custom-html" style="color:#000; font-size:14px">
                                         Şifremi Unuttum
                                     </a>
@@ -87,7 +87,7 @@
                                 style="background-color: #D93954;padding-bottom: 8px;">
                                 <span class="text-white custom-html" style="font-size:17px">Giriş Yap</span>
                             </button>
-                            <a href="{{ route('register') }}"
+                            <a href="{{ route('registerStrategy') }}"
                                 class="btn btn-lg btn-primary w-100 mb-5"
                                 style=" border: 1px solid white; padding-bottom: 8px; background:#e2e2e2;">
                                 <span class="custom-html" style="color:#000; font-size:17px">Kayıt Ol</span>

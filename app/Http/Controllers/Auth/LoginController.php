@@ -53,13 +53,13 @@ class LoginController extends Controller
     {
         return view('auth.custom.login');
     }
-    public function showLogin2Form()
+    public function showLoginStrategyForm()
     {
-        return view('auth.custom.login2');
+        return view('auth.custom.loginStrategy');
     }
-    public function showLogin3Form()
+    public function showLoginGsghukukForm()
     {
-        return view('auth.custom.login3');
+        return view('auth.custom.loginGsghukuk');
     }
     /**
      * The user has been authenticated.

@@ -72,7 +72,7 @@
                                         </label>
                                 </div>
                                     <!--begin::Link-->
-                                    <a href="{{ route('password.request') }}"
+                                    <a href="{{ route('password.requestGsghukuk') }}"
                                     class="link-primary bgi-no-repeat custom-html" style="color:#000; font-size:14px">
                                         Şifremi Unuttum
                                     </a>
@@ -87,7 +87,7 @@
                                 style="background-color: #D93954;padding-bottom: 8px;">
                                 <span class="text-white custom-html" style="font-size:17px">Giriş Yap</span>
                             </button>
-                            <a href="{{ route('register') }}"
+                            <a href="{{ route('registerGsghukuk') }}"
                                 class="btn btn-lg btn-primary w-100 mb-5"
                                 style="border: 1px solid white; padding-bottom: 8px; background:#e2e2e2;">
                                 <span class="custom-html" style="color:#000; font-size:17px">Kayıt Ol</span>

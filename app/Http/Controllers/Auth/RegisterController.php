@@ -59,15 +59,15 @@ class RegisterController extends Controller
             'allowed_chars' => PasswordSpecialCharacter::ALLOWEDCHARS,
         ]);
     }
-    public function showRegistration2Form(): View
+    public function showRegistrationStrategyForm(): View
     {
-        return view('auth.custom.register2', [
+        return view('auth.custom.registerStrategy', [
             'allowed_chars' => PasswordSpecialCharacter::ALLOWEDCHARS,
         ]);
     }
-    public function showRegistration3Form(): View
+    public function showRegistrationGsghukukForm(): View
     {
-        return view('auth.custom.register3', [
+        return view('auth.custom.registerGsghukuk', [
             'allowed_chars' => PasswordSpecialCharacter::ALLOWEDCHARS,
         ]);
     }

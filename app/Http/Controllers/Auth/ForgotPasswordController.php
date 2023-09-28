@@ -34,13 +34,13 @@ class ForgotPasswordController extends Controller
     {
         return view('auth.custom.forgotpw');
     }
-    public function showLinkRequest2Form()
+    public function showLinkRequestStrategyForm()
     {
-        return view('auth.custom.forgotpw2');
+        return view('auth.custom.forgotpwStrategy');
     }
-    public function showLinkRequest3Form()
+    public function showLinkRequestGsghukukForm()
     {
-        return view('auth.custom.forgotpw3');
+        return view('auth.custom.forgotpwGsghukuk');
     }
 
     /**
