@@ -53,7 +53,7 @@
                         <div style="flex:2; display:flex; justify-content:end; align-items:center; gap: 30px;">
                             <img src="/images/pwc-beyaz-logo.png" alt="" srcset="" style="width:55px;height:41px">
                             <img src="/images/strategy-beyaz-logo.png" alt="" srcset="" style="width:79px;height:22px">
-                            <img src="/images/gsg-beyaz-logo.png" alt="" srcset="" style="width:95px;height:13px">
+                            <img src="/images/gsg-beyaz-logo.png" alt="" srcset="">
                         </div>
                     </div>
                 </div>

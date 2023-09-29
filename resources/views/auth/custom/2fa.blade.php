@@ -13,7 +13,7 @@
                         @csrf
                         <!--begin::Heading-->
                         <div class="mb-10">
-                            <img src="/images/pwc-renkli-logo.png" style="width: 70px;"/>
+                            <!-- <img src="/images/pwc-renkli-logo.png" style="width: 70px;"/> -->
                             <!--begin::Title-->
                             <div class="custom-bold" style="color:#d93954; font-size:20px; font-weight:700; margin-top:25px">Telefon Numaranızı Doğrulayın</div>
                             <div class="custom-html" style="font-size:16px; font-weight:bold; margin-top: 6px;">{{ $phone }}</div>
@@ -35,7 +35,7 @@
                             <!--end::notification-->
 
                             <!--start::time left-->
-                            <div class="text-center mt-5 p-2 pt-2" style="color: #D04A02;">
+                            <div class="text-center mt-5 p-2 pt-2" style="color: #d93954;">
                                 <h3 id="countdown_timer" class=""></h3>
                             </div>
                             <!--end::time left-->

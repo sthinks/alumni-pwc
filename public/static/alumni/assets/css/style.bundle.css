@@ -155,13 +155,13 @@ ul{
 }
 .number-group>input:focus
 {
-    border: 1px solid #d04a02 !important;
+    border: 1px solid #000 !important;
     outline:0px !important;
     -webkit-appearance:none;
     box-shadow: none !important;
 }
 .twofacode:valid {
-	border-color: #d04a02;
+	border-color: #000;
 }
 
 .twofacode::-webkit-outer-spin-button,

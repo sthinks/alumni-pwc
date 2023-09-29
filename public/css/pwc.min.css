@@ -445,7 +445,7 @@ thead {
 }
 
 .number-group>input:focus {
-    border-color: #fff !important
+    border-color: #000 !important
 }
 
 .campaign_detail_info_button {

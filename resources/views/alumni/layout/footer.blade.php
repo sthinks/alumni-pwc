@@ -46,8 +46,8 @@
                         </div>
                         <div class="bilesenic">
                             <ul>
-                                <li>Vişnezade Mahallesi, Süleyman Seba Cad. BJK Plaza No:48 B Blok, 34357
-                                    <br />Akaretler / Beşiktaş / İstanbul
+                                <li>Kılıçali Paşa, Galataport İstanbul, Meclis-i Mebusan Cd. No: 8, 34433
+                                    <br />Beyoğlu/İstanbul
                                 </li>
                                 <li><a href="tel:+90 (212) 326 60 60">0 (212) 326 60 60</a></li>
                                 <li><a href="mailto:pwc.tr.alumni@pwc.com">pwc.tr.alumni@pwc.com</a></li>
