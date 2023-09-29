@@ -15,7 +15,7 @@
                         <div class="mb-10">
                             <!-- <img src="/images/pwc-renkli-logo.png" style="width: 70px;"/> -->
                             <!--begin::Title-->
-                            <div class="custom-bold" style="color:#d93954; font-size:20px; font-weight:700; margin-top:25px">Telefon Numaranızı Doğrulayın</div>
+                            <div class="custom-bold" style="color:#d93954; font-size:20px; font-weight:700; margin-top:25px">İki Aşamalı Kimlik Doğrulama</div>
                             <div class="custom-html" style="font-size:16px; font-weight:bold; margin-top: 6px;">{{ $phone }}</div>
                             <div class="custom-html" style="font-size:16px; font-weight:bold; margin-top: 6px;">Yukarıdaki telefon numarasına gönderdiğimiz kodu girin.</div>
                             <!--end::Title-->

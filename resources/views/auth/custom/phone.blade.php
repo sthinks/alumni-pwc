@@ -7,18 +7,17 @@
             <!--begin::Content-->
             <div class="d-flex flex-column justify-content-center flex-column-fluid p-10 pb-lg-20">
                 <!--begin::Wrapper-->
-                <div class="w-lg-500px bg-black rounded shadow-sm p-10 p-lg-15 pwc-card_login">
+                <div class="w-lg-500px bg-white rounded shadow-sm p-10 p-lg-15 pwc-card_login">
                     <!--begin::Form-->
                     <form method="POST" id="phone_verify">
                         @csrf
                         <!--begin::Heading-->
                         <div class="mb-10">
-                            <!--begin::Title-->
-                            <h1 class="text-white mb-3">Telefon Numaranızı Doğrulayın</h1>
-                            <!--end::Title-->
-                            <!--begin::Link-->
-                            <div class="text-white fw-bold fs-5 mb-1">{{ $phone }}</div>
-                            <div class="text-white fs-6">Yukarıdaki telefon numarasına gönderdiğimiz kodu girin.</div>
+                            <!--begin::Title--> 
+                            <div class="custom-bold" style="color:#d93954; font-size:20px; font-weight:700; margin-top:25px">Telefon Numaranızı Doğrulayın</div>
+                            <div class="custom-html" style="font-size:16px; font-weight:bold; margin-top: 6px;">{{ $phone }}</div>
+                            <div class="custom-html" style="font-size:16px; font-weight:bold; margin-top: 6px;">Yukarıdaki telefon numarasına gönderdiğimiz kodu girin.</div>
+                           
                             <!--end::Link-->
                             <!--start::six digit code-->
                             <div class="d-flex justify-content-center mt-5 number-group" id="number_mask_twofa">
@@ -36,7 +35,7 @@
 
                             <!--start::time left-->
                             <div class="text-center mt-5 p-2 pt-2">
-                                <h3 class="text-white" id="countdown_timer"></h3>
+                                <h3 class="" id="countdown_timer"></h3>
                             </div>
                             <!--end::time left-->
                         </div>
@@ -44,21 +43,23 @@
                         <!--begin::Actions-->
                         <div class="text-center d-flex">
                             <!--begin::Submit button-->
-                            <button type="submit" class="btn btn-lg btn-primary w-100 mb-5 text-dark" style="margin-right: 1rem;background-color: #D93954;font-weight: 700;">
-                                <span class="text-white">Kodu Doğrula</span>
+                            <button type="submit" class="btn btn-lg btn-primary w-100 text-dark mb-5"
+                                style="background-color: #D93954; padding-bottom: 8px;">
+                                <span class="text-white custom-html" style="font-size:17px">Kodu Doğrula</span>
                             </button>
                             <!--end::Submit button-->
                         </div>
                         <!--end::Actions-->
-                        <!--begin::resend-->
-                        <div class="text-center">
-                            <a href="#" id="resend_code" class="link-primary fs-6 fw-bolder justify-content-center bgi-no-repeat mt-5" style="color: #fff;">Kodu Yeniden Gönder</a>
-                        </div>
+                        <!--begin::resend--> <a href="#" id="resend_code"
+                                class="btn btn-lg btn-primary w-100 mb-5"
+                                style="border: 1px solid white; padding-bottom: 8px; background:#e2e2e2;">
+                                <span class="custom-html" style="color:#000; font-size:17px">Kodu Yeniden Gönder</span>
+                        </a>
                         <!--end::resend-->
                         <!--start::problem-->
                         <hr class="mt-10">
-                        <a href="mailto:pwctr.alumni@pwc.com?subject=Alumni Portal'a kayıt olurken telefon numaramı doğrularken sorun yaşıyorum.">
-                            <p class="text-white mt-5">Telefon numaranızı doğrularken bir sorun mu yaşıyorsunuz?</p>
+                        <a href="mailto:pwctr.alumni@pwc.com?subject=Alumni sitesine girerken iki aşamalı doğrulamada sorun yaşıyorum.">
+                            <div class="custom-html" style="font-size:16px; font-weight:bold; margin-top: 6px;">Telefon numaranızı doğrularken bir sorun mu yaşıyorsunuz?</div>
                         </a>
                         <!--end::problem-->
                     </form>
