@@ -13,7 +13,7 @@
                         @csrf
                         <!--begin::Heading-->
                         <div class="mb-10" style="position: relative; bottom:20px;">
-                            <img src="/images/pwc-renkli-logo.png" style="width:80px; height:auto"/>
+                            <img src="/images/pwc-renkli-logo.png" style="width:80px; height:auto; margin-top: 1.9rem;"/>
                             <!--begin::Title-->
                             <h4 class="mt-8 custom-bold" style="color:#d93954; font-size:18px">Kayıt Ol</h4>
                             <!--end::Title-->

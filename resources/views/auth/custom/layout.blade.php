@@ -38,21 +38,21 @@
 <!--end::Head-->
 <!--begin::Body-->
 
-<body id="alumni_body" class="bg-white">
+<body id="alumni_body" class="bg-white" style="overflow-x:hidden">
     <!--begin::Main-->
     @yield("main")
     <!--begin::Header-->
-    <div class="alumni-login_header d-flex align-items-center  pt-14 pb-14">
+    <div class="alumni-login_header d-flex align-items-center pt-5 pb-5">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
                     <div class="d-flex align-items-center; align-items:center">
                         <div style="flex:8; display:flex; align-items:center;">
-                            <p class="text-white" style="margin:0px; font-size:14px">© 2015-2023 PwC. All rights reserved. PwC refers to the PwC network and/or one or more of its member firms, each of which is a separate legal entity. Please see www.pwc.com/structure for further details.</p>
+                            <p class="text-white" style="margin:0px; font-size:10px">© 2015-2023 PwC. All rights reserved. PwC refers to the PwC network and/or one or more of its member firms, each of which is a separate legal entity. Please see www.pwc.com/structure for further details.</p>
                         </div>
                         <div style="flex:2; display:flex; justify-content:end; align-items:center; gap: 30px;">
-                            <img src="/images/pwc-beyaz-logo.png" alt="" srcset="" style="width:62px;height:48px">
-                            <img src="/images/strategy-beyaz-logo.png" alt="" srcset="" style="width:92px;height:28px">
+                            <img src="/images/pwc-beyaz-logo.png" alt="" srcset="" style="width:55px;height:41px">
+                            <img src="/images/strategy-beyaz-logo.png" alt="" srcset="" style="width:79px;height:22px">
                             <img src="/images/gsg-beyaz-logo.png" alt="" srcset="" style="width:95px;height:13px">
                         </div>
                     </div>

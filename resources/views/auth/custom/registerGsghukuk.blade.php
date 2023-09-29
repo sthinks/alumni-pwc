@@ -3,7 +3,7 @@
 @section('main')
     <div class="d-flex flex-column flex-root pwc-alumni_background-image">
         <!--begin::Authentication - Sign-in -->
-        <div class="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed" style="background-image: url(/images/gsg-bg.jpg);background-size: cover;">>
+        <div class="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed" style="background-image: url(/images/gsg-bg.jpg);background-size: cover;">
             <!--begin::Content-->
             <div class="d-flex p-10 pb-lg-20 row">
                 <!--begin::Wrapper-->
@@ -13,7 +13,7 @@
                         @csrf
                         <!--begin::Heading-->
                         <div class="mb-10" style="position: relative; bottom:20px;">
-                            <img src="/images/gsg-siyah-logo.png" class="mt-5" alt="" srcset="">
+                            <img src="/images/gsg-siyah-logo.png" alt="" srcset=""  style="width: 120px;margin-top: 1.9rem;">
                             <!--begin::Title-->
                             <h4 class="mt-8 custom-bold" style="color:#d93954; font-size:18px">Kayıt Ol</h4>
                             <!--end::Title-->

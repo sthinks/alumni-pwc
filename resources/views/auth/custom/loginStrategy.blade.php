@@ -6,7 +6,7 @@
         <div class="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed"
             style="background-image: url(/images/strategy-bg.png); background-size: cover;">
             <!--begin::Content-->
-            <div class="d-flex justify-content-center flex-column flex-column-fluid p-10 pb-lg-20">
+            <div class="d-flex justify-content-center flex-column flex-column-fluid">
                 <!--begin::Wrapper-->
                 <div class="w-lg-500px bg-white rounded shadow-sm p-10 p-lg-15 pwc-card_login">
                     <!--begin::Form-->
@@ -15,7 +15,7 @@
                         <!--begin::Heading-->
                         <div class="mb-8">
                             <!--begin::Title-->
-                            <img src="/images/strategy-siyah-logo.png" alt="" srcset="">
+                            <img src="/images/strategy-siyah-logo.png" alt="" srcset="" style="width: 130px;">
                             <!--begin::Link-->
                             <div class="custom-bold" style="color:#d93954; font-size:20px; font-weight:700; margin-top:25px">Alumni Portal'a hoş geldiniz.</div>
                             <div class="custom-html" style="font-size:16px; font-weight:bold; margin-top: 6px;">Kullanıcı Girişi</div>
