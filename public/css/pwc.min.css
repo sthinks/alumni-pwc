@@ -114,7 +114,7 @@
 }
 
 .alumni-login_header {
-    min-height: 75px;
+    min-height: auto;
     background-color: #2d2d2d
 }
 
