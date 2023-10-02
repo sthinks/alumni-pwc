@@ -9,7 +9,7 @@
                 <!--begin::Wrapper-->
                 <div class="w-lg-500px bg-white rounded shadow-sm p-10 p-lg-15 pwc-card_login">
                     <!--begin::Form-->
-                    <form method="POST" action="{{ route('password.email') }}" id="forget_pw_form">
+                    <form method="POST" action="{{ route('password.emailGsg') }}" id="forget_pw_form">
                         @csrf
                         <!--begin::Heading-->
                         <div class="mb-10">

@@ -65,4 +65,33 @@ class ForgotPasswordController extends Controller
             ? new JsonResponse(['message' => trans($response)], 200)
             : redirect('login')->with('status', trans($response));
     }
+
+    protected function sendResetLinkResponseStrategy(Request $request, $response)
+    {
+        // log this activity
+        $email = $request->input('email');
+        $user = User::where('email', $email)->first();
+        activity(config('activitylog.auth_logs.name'))
+            ->performedOn($user)
+            ->withProperties(['ip' => $request->ip(), 'user_agent' => $request->userAgent()])
+            ->log(config('activitylog.auth_logs.password_reset_request'));
+
+        return $request->wantsJson()
+            ? new JsonResponse(['message' => trans($response)], 200)
+            : redirect('login/strategy')->with('status', trans($response));
+    }
+    protected function sendResetLinkResponseGsg(Request $request, $response)
+    {
+        // log this activity
+        $email = $request->input('email');
+        $user = User::where('email', $email)->first();
+        activity(config('activitylog.auth_logs.name'))
+            ->performedOn($user)
+            ->withProperties(['ip' => $request->ip(), 'user_agent' => $request->userAgent()])
+            ->log(config('activitylog.auth_logs.password_reset_request'));
+
+        return $request->wantsJson()
+            ? new JsonResponse(['message' => trans($response)], 200)
+            : redirect('login/gsghukuk')->with('status', trans($response));
+    }
 }

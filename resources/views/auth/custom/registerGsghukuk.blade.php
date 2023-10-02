@@ -1,7 +1,7 @@
 @extends("auth.custom.layout")
 @section('title', 'Kayıt Ol')
 @section('main')
-    <div class="d-flex flex-column flex-root pwc-alumni_background-image">
+    <div class="d-flex flex-column flex-root ">
         <!--begin::Authentication - Sign-in -->
         <div class="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed" style="background-image: url(/images/gsg-bg.jpg);background-size: cover;">
             <!--begin::Content-->

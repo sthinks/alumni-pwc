@@ -19,6 +19,7 @@ class PhoneVerificationController extends Controller
 
     public function verify(Request $request)
     {
+    
         // get the user
         $user = auth()->user();
 

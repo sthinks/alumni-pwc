@@ -1183,7 +1183,7 @@ input[type=checkbox]:checked {
 
 #countdown {
     font-size: 25px;
-    color: #FFF;
+    color: black !important;
     border: 1px solid #FFF !important;
     width: 50px;
     height: 40px;
@@ -2228,4 +2228,11 @@ figure.image {
 
 .tagify__dropdown {
     z-index: 999999 !important
+}
+@media (min-width: 300px) and (max-width: 767.98px) { 
+    .footer-text-and-logo{
+        flex-direction: column-reverse;
+        width: 100%;
+        gap: 15px;
+    }
 }

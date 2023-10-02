@@ -19,7 +19,7 @@ class AuthRouteMethods
                 $this->get('login/strategy', 'Auth\LoginController@showLoginStrategyForm')->name('loginStrategy');
                 $this->get('login/gsghukuk', 'Auth\LoginController@showLoginGsghukukForm')->name('loginGsghukuk');
 
-                $this->post('login', 'Auth\LoginController@login');
+                $this->post('login', 'Auth\LoginController@login');   
             }
             
             // Logout Routes...
@@ -66,6 +66,8 @@ class AuthRouteMethods
             $this->get('password/reset/gsghukuk', 'Auth\ForgotPasswordController@showLinkRequestGsghukukForm')->name('password.requestGsghukuk');
 
             $this->post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
+            $this->post('password/emailStrategy', 'Auth\ForgotPasswordController@sendResetLinkEmailStrategy')->name('password.emailStrategy');
+            $this->post('password/emailGsg', 'Auth\ForgotPasswordController@sendResetLinkEmailGsg')->name('password.emailGsg');
             $this->get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
             $this->post('password/reset', 'Auth\ResetPasswordController@reset')->name('password.update');
         };

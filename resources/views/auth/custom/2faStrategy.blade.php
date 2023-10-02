@@ -1,60 +1,22 @@
 @extends("auth.custom.layout")
 @section("title", "İki Aşamalı Doğrulama")
 @section("main")
-<?php
-    $bgstyle = "";
-    $bglogo = "";
-    $referer = request()->header('Referer');
-                            
-    $parsedUrl = parse_url($referer);
-
-    if (isset($parsedUrl['path'])) {
-        $path = $parsedUrl['path'];
-        if($path == "/login/gsghukuk")
-        {
-            $bgstyle = "background-image: url(/images/gsg-bg.jpg); background-size: cover;";
-            $bglogo  = "/images/gsgblacklogo.png";
-        }
-        else if($path == "/login/strategy")
-        {
-            $bgstyle = "background-image: url(/images/strategy-bg.png); background-size: cover;";
-            $bglogo = "/images/strategy-siyah-logo.png";
-        }else if($path == "/login")
-        {
-            $bgstyle = "background-image: url('/static/alumni/assets/media/background/pwc-alumni-login-video.png'); background-size: cover;";
-            $bglogo = "/images/pwc-renkli-logo.png";
-        }else{
-             $bgstyle = "background-image: url('/static/alumni/assets/media/background/pwc-alumni-login-video.png'); background-size: cover;";
-             $bglogo = null;
-        }
-    }
-                            
-?> 
-    <div class="d-flex flex-column flex-root" style="<?php echo $bgstyle; ?>">
+    <div class="d-flex flex-column flex-root ">
         <!--begin::Authentication - Sign-in -->
-        <div class="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed">
+        <div class="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed" style="background-image: url(/images/strategy-bg.png); background-size: cover;">
             <!--begin::Content-->
             <div class="d-flex justify-content-center flex-column flex-column-fluid">
                 <!--begin::Wrapper-->
                 <div class="w-lg-500px bg-white rounded shadow-sm p-10 p-lg-10 pwc-card_login">
                     <!--begin::Form-->
                     <form method="POST" id="two_auth_form">
-                        
                         @csrf
                         <!--begin::Heading-->
                         <div class="mb-10">
                             <!-- <img src="/images/pwc-renkli-logo.png" style="width: 70px;"/> -->
                             <!--begin::Title-->
-                            <?php
-                                if($bglogo != null)
-                                {
-                            ?> 
-                                <img src="<?php echo $bglogo; ?>" alt="Logo" style="width: 130px;" />
-
-                            <?php 
-                                }
-                            ?>
-                            <div class="custom-bold" style="color:#d93954; font-size:20px; font-weight:700; margin-top:25px">İki Aşamalı Kimlik Doğrulama</div>
+                            <img src="/images/strategy-siyah-logo.png" alt="" srcset="">
+                            <div class="custom-bold" style="color:#d93954; font-size:20px; font-weight:700; margin-top:25px">İki Aşamalı Kimlik Doğrulama Strategy</div>
                             <div class="custom-html" style="font-size:16px; font-weight:bold; margin-top: 6px;">{{ $phone }}</div>
                             <div class="custom-html" style="font-size:16px; font-weight:bold; margin-top: 6px;">Yukarıdaki telefon numarasına gönderdiğimiz kodu girin.</div>
                             <!--end::Title-->

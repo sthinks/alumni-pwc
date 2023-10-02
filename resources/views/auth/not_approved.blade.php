@@ -7,22 +7,23 @@
         <!--begin::Content-->
         <div class="d-flex align-items-start justify-content-center flex-column flex-column-fluid p-10 pb-lg-20">
             <!--begin::Wrapper-->
-            <div class="w-lg-500px bg-white rounded shadow-sm p-10 p-lg-15 bg-black pwc-card_login">
+            <div class="w-lg-500px bg-white rounded shadow-sm p-10 p-lg-15 bg-white pwc-card_login">
                 <!--begin::Form-->
                 <form class="form w-100" novalidate="novalidate" id="kt_sign_in_form" action="#">
                     <!--begin::Heading-->
                     <div class="mb-10 text-center">
                         <!--begin::Title-->
-                        <h1 class="mb-3 text-white">Telefon numaranız doğrulandı.</h1>
+                        <h1 class="mb-3 text-black">Telefon numaranız doğrulandı.</h1>
                         <!--end::Title-->
                         <!--begin::Link-->
-                        <img src="{{ url("static/alumni/assets/media/icons/success-tick.png") }}" alt="Success">
-                        <div class="fw-bold fs-5 mb-1 mt-5 text-white">{{ auth()->user()->maskedPhone() }}</div>
-                        <div class="fs-6 text-white">Telefon Numarası Onaylandı!</div>
-                        <hr class="mt-10" style="color: #FFF;"/>
-                        <div class="text-white" style="font-weight: bold;">Kayıt talebiniz alınmıştır. Alumni ilişkileri sorumlumuz tarafından gerekli kontroller gerçekleştirildikten sonra tarafınıza dönüş sağlanacaktır.</div>
-                        <p class="mt-5 font-weight-bold text-white">Yönlendiriliyorsunuz...</p>
-                        <div id="countdown"></div>
+                         <img src="/images/success-tickblack.png" alt="" srcset="">
+                        <!-- <img class="text-white" src="{{ url("static/alumni/assets/media/icons/success-tick.png") }}" alt="Success"> -->
+                        <div class="fw-bold fs-5 mb-1 mt-5 text-black">{{ auth()->user()->maskedPhone() }}</div>
+                        <div class="fs-6 text-black">Telefon Numarası Onaylandı!</div>
+                        <hr class="mt-10" style="color: black"/>
+                        <div class="text-black" style="font-weight: bold;">Kayıt talebiniz alınmıştır. Alumni ilişkileri sorumlumuz tarafından gerekli kontroller gerçekleştirildikten sonra tarafınıza dönüş sağlanacaktır.</div>
+                        <p class="mt-5 font-weight-bold text-black">Yönlendiriliyorsunuz...</p>
+                        <div  id="countdown"></div>
                         <!--end::Link-->
                     </div>
                     <!--begin::Heading-->

@@ -1,7 +1,7 @@
 @extends("auth.custom.layout")
 @section('title', 'Giriş Yap')
 @section('main')
-    <div class="d-flex flex-column flex-root pwc-alumni_background-image">
+    <div class="d-flex flex-column flex-root">
         <!--begin::Authentication - Sign-in -->
         <div class="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed"
             style="background-image: url(/images/gsg-bg.jpg);background-size: cover;">
@@ -15,7 +15,7 @@
                         <!--begin::Heading-->
                         <div class="mb-8">
                             <!--begin::Title-->
-                            <img src="/images/gsg-siyah-logo.png" alt="" srcset="" style="width: 120px;">
+                            <img src="/images/gsgblacklogo.png" alt="" srcset="" style="width: 140px;">
                             <!--begin::Link-->
                             <div  class="custom-bold" style="color:#d93954; font-size:20px; font-weight:700; margin-top:25px">Alumni Portal'a hoş geldiniz.</div>
                             <div class="custom-html" style="font-size:16px; font-weight:bold; margin-top: 6px;">Kullanıcı Girişi</div>
